@@ -2,5 +2,7 @@ print("Hello World!")
 
 import subprocess
 
-subprocess.Popen("tower-cli host list")
+checkResult = subprocess.run(['tower-cli','--help'],shell=True)
+#print(checkResult)
+
 
